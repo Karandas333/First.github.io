@@ -1,0 +1,116 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+  background-image: url(Img1.jpg);
+  background-position: center;
+  overflow: hidden;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.imgs{
+  width: 100%;
+  height: 100%;
+  background-image: url(Img1.jpg);
+  background-position: center;
+  overflow: hidden;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+nav{
+  width: 100%;
+  margin: 2vw 1.5vw;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+  margin: 0vw 7vw;
+  font-size: 1.7vw;
+}
+nav a:hover{
+  color: rgb(216, 157, 157);
+}
+nav a:first-child{
+  color: rgb(216, 157, 157);;
+}
+.dev{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.auto{
+  position: relative;
+}
+h1{
+  color: #fff;
+  font-size: 5vw;
+  letter-spacing: 1.5vw;
+}
+.span{
+  color: #111;
+  border-right: #fff;
+  overflow: hidden;
+  animation: change ease 5.4s;
+}
+#span2{
+  color: #fff;
+  border: none;
+}
+@keyframes change{
+    from{
+      width: 0%;
+    }
+    to{
+      width: 100%;
+    }
+  }
+.dev a{
+  background-color: rgb(31, 184, 133);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.7vw 1.4vw;
+  border-radius: 12vw;
+  font-size: 1.7vw;
+}
+.dev a:hover{
+  color: #111;
+  background-color: rgb(82, 218, 172);
+}
+
+@media (max-width: 950px) {
+  nav a{
+    font-size: 2vmax;
+  }
+  h1{
+  font-size: 5vmax;
+}
+.span{
+  overflow: hidden;
+  animation: change ease-in-out 3.4s;
+}
+#span2{
+  color: #fff;
+  border: none;
+  animation: change ease-in-out 3.4s;
+}
+@keyframes change{
+    from{
+      width: 0%;
+    }
+    to{
+      width: 100%;
+    }
+  }
+  .dev a{
+  padding: 1vw 1.9vw;
+  border-radius: 15vw;
+  font-size: 2vmax;
+  }
+}
